@@ -1,0 +1,12 @@
+# Forzar saltos de línea LF en todos los archivos de texto
+* text eol=lf
+
+# Configuración específica para algunos archivos comunes
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.sh   text eol=lf
+*.py   text eol=lf
