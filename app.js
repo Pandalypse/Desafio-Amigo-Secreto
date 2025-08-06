@@ -66,6 +66,17 @@ function mostrarResultado() {
     }
 }
 
+<div class="button-container">
+    <button class="button-reset" onclick="reiniciarJuego()">
+        Reiniciar lista
+    </button>
+</div>
+function reiniciarJuego() {
+    listaDeAmigos = [];
+    asignaciones = {};
+    mostrarListaDeAmigos();
+    document.getElementById('resultado').innerHTML = '';
+}
 window.onload = function () {
     listaDeAmigos = ["Ana", "Luis", "Carlos", "María", "Pedro"];
     mostrarListaDeAmigos();
