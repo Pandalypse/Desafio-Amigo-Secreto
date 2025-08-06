@@ -90,3 +90,8 @@ window.onload = function () {
     mostrarListaDeAmigos();
     sortearAmigo();
 };
+<script src="app.js" defer></script>
+document.getElementById('sortear').addEventListener('click', sortearAmigo);
+document.getElementById('agregar').addEventListener('click', agregarAmigo);
+document.getElementById('limpiar').addEventListener('click', limpiarLista);
+document.getElementById('reiniciar').addEventListener('click', reiniciarJuego); 
