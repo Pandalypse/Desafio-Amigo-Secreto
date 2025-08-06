@@ -53,9 +53,7 @@ function sortearAmigo() {
     }
 
     mostrarResultado();
-}
-
-function mostrarResultado() {
+    function mostrarResultado() {
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = '';
 
@@ -77,6 +75,16 @@ function reiniciarJuego() {
     mostrarListaDeAmigos();
     document.getElementById('resultado').innerHTML = '';
 }
+function limpiarLista() {
+    listaDeAmigos = [];
+    asignaciones = {};
+    document.getElementById('listaAmigos').innerHTML = '';
+    document.getElementById('resultado').innerHTML = '';
+}
+}
+
+
+
 window.onload = function () {
     listaDeAmigos = ["Ana", "Luis", "Carlos", "María", "Pedro"];
     mostrarListaDeAmigos();
