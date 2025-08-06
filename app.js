@@ -53,7 +53,9 @@ function sortearAmigo() {
     }
 
     mostrarResultado();
-    function mostrarResultado() {
+}
+
+function mostrarResultado() {
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = '';
 
@@ -64,34 +66,16 @@ function sortearAmigo() {
     }
 }
 
-<div class="button-container">
-    <button class="button-reset" onclick="reiniciarJuego()">
-        Reiniciar lista
-    </button>
-</div>
 function reiniciarJuego() {
     listaDeAmigos = [];
     asignaciones = {};
     mostrarListaDeAmigos();
     document.getElementById('resultado').innerHTML = '';
 }
+
 function limpiarLista() {
     listaDeAmigos = [];
     asignaciones = {};
     document.getElementById('listaAmigos').innerHTML = '';
     document.getElementById('resultado').innerHTML = '';
 }
-}
-
-
-
-window.onload = function () {
-    listaDeAmigos = ["Ana", "Luis", "Carlos", "María", "Pedro"];
-    mostrarListaDeAmigos();
-    sortearAmigo();
-};
-<script src="app.js" defer></script>
-document.getElementById('sortear').addEventListener('click', sortearAmigo);
-document.getElementById('agregar').addEventListener('click', agregarAmigo);
-document.getElementById('limpiar').addEventListener('click', limpiarLista);
-document.getElementById('reiniciar').addEventListener('click', reiniciarJuego); 
